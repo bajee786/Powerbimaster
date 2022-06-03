@@ -15,7 +15,6 @@ steps:
     SourceFolder: '''$(Build.SourcesDirectory)'''
     Contents: '''**.pbix'''
     TargetFolder: '''$(Build.ArtifactStagingDirectory)'''
-  OverWrite: true
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
